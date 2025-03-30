@@ -110,7 +110,6 @@ lit.js
 ## folder structure
 
 <!-- readme-tree start -->
-
 ```
 .
 ├── .github
@@ -132,17 +131,31 @@ lit.js
 │       ├── repo-create_doctoc.yml_
 │       ├── repo-create_doctoc_md.yml
 │       └── repo-create_tree_readme.yml
+├── .gitignore
 ├── LICENSE
-├── LICENSE_Apache-2
-├── LICENSE_GPL-2
-├── LICENSE_GPL-3
-├── LICENSE_MIT
 ├── README.md
+├── docs
+│   ├── dark.png
+│   └── light.png
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── index.css
+│   ├── rz-theme
+│   │   ├── home-outline.svg
+│   │   ├── moon-outline.svg
+│   │   ├── rz-theme.css
+│   │   └── sunny-outline.svg
+│   └── vite.svg
+├── src
+│   └── rz-theme.js
 └── tree.bak
 
-6 directories, 21 files
+10 directories, 32 files
 ```
-
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
