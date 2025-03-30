@@ -1,0 +1,161 @@
+:root {
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, Roboto, Ubuntu,
+    "Segeo UI", "Helvetica Neue", Arial, sans-serif;
+  --font-color-light: oklch(0% 0 0);
+  --font-color-dark: oklch(100% 0 0);
+
+  --font-size-normal: 1rem;
+  --font-size-bigger: 1.5rem;
+  --font-size-small: 0.8rem;
+  --font-size-smaller: 0.5rem;
+
+  /* lightgrey */
+  --background-color: oklch(86.69% 0 0);
+  /* lighter grey */
+  --background-color-light: oklch(95.84% 0.004 214.33); /*oklch(95.21% 0 0);*/
+  /* grey */
+  --background-color-dark: oklch(69.09% 0.026 242.51); /*oklch(59.99% 0 0);*/
+
+  --universal-padding: 5px;
+
+  --color-decent-lightgrey: oklch(86.69% 0 0);
+  --color-decent-8: oklch(0% 0 0 / 80%);
+  --color-decent-5: oklch(0% 0 0 / 50%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: 100vw 100vh;
+  height: 100%;
+
+  background-color: light-dark(white, black);
+  color: light-dark(red, blue);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: 50px;
+
+  background: oklch(69.09% 0.026 242.51);
+  background: -webkit-linear-gradient(
+    to left,
+    oklch(95.84% 0.004 214.33),
+    oklch(69.09% 0.026 242.51)
+  );
+  background: linear-gradient(
+    to right,
+    oklch(95.84% 0.004 214.33),
+    oklch(69.09% 0.026 242.51)
+  );
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "left right";
+    height: 100%;
+
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+      padding: 0 10px 0 10px;
+    }
+    .left {
+      grid-area: left;
+      opacity: 0.5;
+    }
+    .right {
+      grid-area: right;
+      justify-content: end;
+    }
+  }
+}
+
+main {
+  margin: 20px;
+}
+
+.brief {
+  font-size: var(--font-size-small);
+  color: var(--font-color-light);
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  margin: 0 20px 0 20px;
+}
+code > pre {
+  overflow: auto;
+  background: black;
+  color: yellowgreen;
+  padding: var(--universal-padding);
+  width: fit-content;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-color-dark);
+    transition: background-color 0.5s ease;
+    color: var(--font-color-dark);
+
+    .left {
+      color: black;
+    }
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--background-color-light);
+    transition: background-color 0.5s ease;
+    color: var(--font-color-light);
+
+    .left {
+      color: black;
+    }
+  }
+}
+
+html[data-theme="light"] {
+  body {
+    background-color: var(--background-color-light);
+    color: var(--font-color-light);
+    transition: background-color 0.5s ease;
+
+    .left {
+      color: black;
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  body {
+    background-color: var(--background-color-dark);
+    transition: background-color 0.5s ease;
+    color: var(--font-color-dark);
+
+    .left {
+      color: black;
+    }
+  }
+}
