@@ -137,7 +137,6 @@ Lit is a simple library for building fast, lightweight web components.
 ## folder structure
 
 <!-- readme-tree start -->
-
 ```
 .
 ├── .github
@@ -184,7 +183,6 @@ Lit is a simple library for building fast, lightweight web components.
 
 10 directories, 32 files
 ```
-
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
