@@ -6,7 +6,7 @@
 [Report Issue](https://github.com/Zheng-Bote/rz-theme/issues) [Request Feature](https://github.com/Zheng-Bote/rz-theme/pulls)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-![GitHub Created At](https://img.shields.io/github/created-at/Zheng-Bote/rz-theme)
+![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/rz-theme)
 
 </div>
 
@@ -59,6 +59,7 @@
 ![HTML5](https://img.shields.io/badge/HTML-5+-E34F26?logo=html5)
 ![Typescript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript)
 ![Lit.js](https://img.shields.io/badge/Lit.js-324FFF?logo=lit)
+![CSS3](https://img.shields.io/badge/CSS3-663399?logo=css3)
 
 A Web Component to get/set/toogle light-dark mode.
 
@@ -80,9 +81,11 @@ A Web Component to get/set/toogle light-dark mode.
 
 # Status
 
-![Status](https://img.shields.io/badge/Status-stable-green)
-![Status](https://img.shields.io/badge/Status-works-green)
+![GitHub Created At](https://img.shields.io/github/created-at/Zheng-Bote/rz-theme)
 ![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/rz-theme)
+
+![Status](https://img.shields.io/badge/Status-stable-green)
+![Status](https://img.shields.io/badge/Status-works_as_designed-green)
 
 ![GitHub Issues](https://img.shields.io/github/issues/Zheng-Bote/rz-theme)
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Zheng-Bote/rz-theme)
@@ -90,6 +93,8 @@ A Web Component to get/set/toogle light-dark mode.
 # Documentation
 
 ## Usage
+
+### html example
 
 ```html
 <!DOCTYPE html>
@@ -111,6 +116,8 @@ A Web Component to get/set/toogle light-dark mode.
 ```
 
 _see also example:_ [index.html](./index.html)
+
+### css example
 
 ```css
 html[data-theme="light"] {
