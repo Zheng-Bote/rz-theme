@@ -112,6 +112,24 @@ A Web Component to get/set/toogle light-dark mode.
 
 _see also example:_ [index.html](./index.html)
 
+```css
+html[data-theme="light"] {
+  body {
+    background-color: var(--background-color-light);
+    transition: background-color 0.5s ease;
+  }
+}
+
+html[data-theme="dark"] {
+  body {
+    background-color: var(--background-color-dark);
+    color: var(--font-color-dark);
+  }
+}
+```
+
+_see also example:_ [index.css](./public/index.css)
+
 ![screenshot](./docs/light.png)
 
 ![screenshot](./docs/dark.png)
@@ -142,6 +160,7 @@ Lit is a simple library for building fast, lightweight web components.
 ## folder structure
 
 <!-- readme-tree start -->
+
 ```
 .
 ├── .github
@@ -188,6 +207,7 @@ Lit is a simple library for building fast, lightweight web components.
 
 10 directories, 32 files
 ```
+
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
