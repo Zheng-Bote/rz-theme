@@ -160,7 +160,6 @@ Lit is a simple library for building fast, lightweight web components.
 ## folder structure
 
 <!-- readme-tree start -->
-
 ```
 .
 ├── .github
@@ -195,19 +194,17 @@ Lit is a simple library for building fast, lightweight web components.
 │   ├── favicon.ico
 │   ├── favicon.svg
 │   ├── index.css
-│   ├── rz-theme
-│   │   ├── home-outline.svg
-│   │   ├── moon-outline.svg
-│   │   ├── rz-theme.css
-│   │   └── sunny-outline.svg
-│   └── vite.svg
+│   └── rz-theme
+│       ├── home-outline.svg
+│       ├── moon-outline.svg
+│       ├── rz-theme.css
+│       └── sunny-outline.svg
 ├── src
 │   └── rz-theme.js
 └── tree.bak
 
-10 directories, 32 files
+10 directories, 31 files
 ```
-
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
