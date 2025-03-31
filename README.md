@@ -84,6 +84,27 @@ A Web Component to get/set/toogle light-dark mode
 
 # Documentation
 
+## Usage
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rz-theme</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+
+    <script type="module" crossorigin src="/assets/index-BCLgRFo_.js"></script>
+  </head>
+  <body>
+    <rz-theme />
+  </body>
+</html>
+```
+
 _see also example:_ [index.html](./index.html)
 
 ![screenshot](./docs/light.png)
@@ -105,11 +126,18 @@ npn run build
 
 ## Dependencies
 
-lit.js
+![Lit.js](https://img.shields.io/badge/Lit.js-324FFF?logo=lit)
+
+Simple. Fast. Web Components.
+
+Lit is a simple library for building fast, lightweight web components.
+
+[Lit.js](https://lit.dev/)
 
 ## folder structure
 
 <!-- readme-tree start -->
+
 ```
 .
 ├── .github
@@ -156,6 +184,7 @@ lit.js
 
 10 directories, 32 files
 ```
+
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
