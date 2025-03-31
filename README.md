@@ -58,8 +58,13 @@
 
 ![HTML5](https://img.shields.io/badge/HTML-5+-E34F26?logo=html5)
 ![Typescript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript)
+![Lit.js](https://img.shields.io/badge/Lit.js-324FFF?logo=lit)
 
-A Web Component to get/set/toogle light-dark mode
+A Web Component to get/set/toogle light-dark mode.
+
+- checks if localStorage `theme`-attribute is set to `light` or `dark`
+- if no localStorage `theme`-attribute is found, checks the browser configuration for `prefers-color-scheme`
+- given or clicked value will be stored in localStorage `theme`-attribute as well as `document.documentElement Attribute "data-theme"`
 
 ## Features
 
@@ -75,7 +80,7 @@ A Web Component to get/set/toogle light-dark mode
 
 # Status
 
-![Status](https://img.shields.io/badge/Status-useable-green)
+![Status](https://img.shields.io/badge/Status-stable-green)
 ![Status](https://img.shields.io/badge/Status-works-green)
 ![GitHub Release Date](https://img.shields.io/github/release-date/Zheng-Bote/rz-theme)
 
